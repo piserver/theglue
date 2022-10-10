@@ -30,21 +30,21 @@ inputStream
         });
     });
 
-const parseCsvRow = (row) => {
+const parseCsvRow = (col) => {
     return {
-        participant: row[0],
-        date1: row[1],
-        date2: row[2],
-        date3: row[3],
-        date4: row[4],
-        date5: row[5],
-        date6: row[6],
-        date7: row[7],
-        date8: row[8]
+        participant: col[0],
+        date1: col[1],
+        date2: col[2],
+        date3: col[3],
+        date4: col[4],
+        date5: col[5],
+        date6: col[6],
+        date7: col[7],
+        date8: col[8]
     }
 }
 
-const baseHtmlTemplate = (vars = { body: '' }) => {
+const baseHtmlTemplate = (vars) => {
     return Mustache.render(`
     <!doctype html>
     <html lang="en">
