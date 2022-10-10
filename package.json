@@ -1,0 +1,11 @@
+{
+  "name": "basic-html-template",
+  "version": "1.0.0",
+  "scripts": {
+    "run": "node csv-to-html.js"
+  },
+  "dependencies": {
+    "csv-reader": "^1.0.9",
+    "mustache": "^4.2.0"
+  }
+}
