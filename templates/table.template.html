@@ -1,0 +1,23 @@
+<table class="table">
+    {{#caption}}
+        <caption>{{.}}</caption>
+    {{/caption}}
+    <thead>
+        {{#headerRows}}
+            <tr>
+                {{#.}}
+                    <th scope="col">{{value}}</th>
+                {{/.}}
+            </tr>
+        {{/headerRows}}
+    </thead>
+    <tbody>
+        {{#bodyRows}}
+            <tr>
+                {{#.}}
+                    <td>{{value}}</td>
+                {{/.}}
+            </tr>
+        {{/bodyRows}}
+    </tbody>
+</table>
